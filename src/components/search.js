@@ -23,7 +23,7 @@ const Search = (props) => {
                     <span>{item.categories || 'UNCATEGORIZED'}</span>: {item.value.substring(0, 25) + '...'}
                 </Link>
             </li>
-        ))
+        )).slice(0, 10)
         return (
             <ul className="nav-dropdown-menu">
                 {result}

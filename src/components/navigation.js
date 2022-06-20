@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 
 const Navigation = (props) => {
@@ -17,7 +19,13 @@ const Navigation = (props) => {
                 </li>
                 <li className="nav-li" onClick={() => setMenuStatus(!menuStatus)}>
                     <button className="nav-li nav-dropdown" id="menuItems">
-                        MAIN MENU
+                        <span>
+                            <FontAwesomeIcon icon={faUser} className='faUser' />
+                            MAIN MENU
+                        </span>
+                        <span>
+                            <FontAwesomeIcon icon={faCaretDown} className='' />
+                        </span>
                     </button>
 
                     {

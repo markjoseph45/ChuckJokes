@@ -192,6 +192,12 @@ html {
             border: none;
             padding: 0 !important;
             color: inherit;
+            display: flex;
+            justify-content: space-between;
+            .faUser{
+              margin-right: 10px;
+              font-size: 16px;
+            }
           }
       }
       @include Dropdown;
@@ -539,6 +545,9 @@ html {
   }
   @include NavSmScreen;
   @include SearchSmScreen;
+  .nav-ul {
+    width: 93% !important;
+  }
   // Search
   .search{
     .nav-dropdown-menu {
@@ -562,11 +571,14 @@ html {
 
 
 @media (max-width: 576px) {
-.wrapper {
+  .wrapper {
     max-width: 94%;
   }
   @include NavSmScreen;
   @include SearchSmScreen;
+  .nav-ul{
+    width: 93% !important;
+  }
   // Search
   .search {
     .nav-dropdown-menu {
